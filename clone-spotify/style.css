@@ -1,3 +1,8 @@
+:root {
+    --default-green: #1DB954;
+    --light-green: #1ed760;
+}
+
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -10,7 +15,7 @@ body {
 }
 /* Classes utilitárias */
 .btn-primary {
-    background-color: #1DB954;
+    background-color: var(--default-green);
     color: white;
     text-transform: uppercase;
     padding: 15px 60px;
@@ -18,6 +23,11 @@ body {
     border-radius: 30px;
     letter-spacing: 1px;
     font-weight: bold;
+    transition: all 400ms ease;
+}
+.btn-primary:hover {
+    background: var(--light-green);
+    cursor: pointer;
 }
 .logo {
     height: 40px;
@@ -47,6 +57,11 @@ body {
 }
 #navbar .navbar-container ul li {
     padding: 0 20px;
+    transition: all 400ms ease;
+}
+#navbar .navbar-container ul li:hover {
+    color: var(--default-green);
+    cursor: pointer;
 }
 /* :nth-child(3) - seleciona o elemento filho li que está na posição 3 dentro de ul */
 #navbar .navbar-container ul li:nth-child(3) { 
@@ -85,6 +100,7 @@ body {
     display: flex;
     width: 60%;
     margin: auto;
+    justify-content: space-between;
 }
 #footer .footer-content .footer-menu {
     margin: 0 60px;
@@ -92,6 +108,11 @@ body {
 }
 #footer .footer-content .footer-menu .footer-menu-item {
     margin: 25px 0;
+    transition: all 400ms ease;
+}
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+    color: var(--default-green);
+    cursor: pointer;
 }
 #footer .footer-content .footer-menu p {
     font-weight: bold;
@@ -106,6 +127,12 @@ body {
 .socials i {
     margin: 0 20px;
     font-size: 1.7rem;
+    transition: all 400ms ease;
+}
+.socials i:hover {
+    color: var(--default-green);
+    cursor: pointer;
+    font-size: 1.8rem;
 }
 /* Footer Info */
 .footer-info {
@@ -117,6 +144,7 @@ body {
     font-weight: bold;
     color: #919496;
     font-size: 0.75rem;
+    padding-top: 50px;
 }
 .footer-info .footer-info-items {
     display: flex;
@@ -124,15 +152,27 @@ body {
 }
 .footer-info .footer-info-items .footer-info-item {
     margin: 0 10px;
+    transition: all 400ms ease;
 }
-.footer-info .rights {
+.footer-info .footer-info-items .footer-info-item:hover{
+    color: var(--default-green);
+    cursor: pointer;
+}
+/* .footer-info .rights {
 
-}
+} */
 .footer-info .rights .country {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
+}
+.footer-info .rights .country p {
+    transition: all 400ms ease;
+}
+.footer-info .rights .country p:hover {
+    color: var(--default-green);
+    cursor: pointer;
 }
 .footer-info .rights .country .brazil-flag {
     height: 20px;
